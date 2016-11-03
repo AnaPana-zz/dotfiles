@@ -13,5 +13,11 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'ConradIrwin/vim-bracketed-paste'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ctrlpvim/ctrlp.vim'
+
 filetype plugin indent on                   " required!
 call plug#end()
