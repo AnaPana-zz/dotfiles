@@ -1,5 +1,5 @@
 set nocompatible
-source plugins.vim
+source /home/anastasia/Projects/dotfiles/plugins.vim
 
 syntax enable
 filetype plugin indent on

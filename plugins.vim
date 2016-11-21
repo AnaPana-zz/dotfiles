@@ -19,5 +19,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
 
+" Python
+Plug 'jmcantrell/vim-virtualenv', { 'for': 'python' }
+Plug 'klen/python-mode', { 'for': 'python' }
+Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
+Plug 'raimon49/requirements.txt.vim'
+
 filetype plugin indent on                   " required!
 call plug#end()
