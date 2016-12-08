@@ -30,6 +30,8 @@ alias gc="git checkout"
 alias gm="git merge"
 alias gp="git pull"
 alias gmm="git commit -m "
+alias gA="git add -A"
+alias gs="git status"
 
 # start ssh daemon
 pcscd
