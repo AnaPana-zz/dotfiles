@@ -29,6 +29,7 @@ alias g="git"
 alias gc="git checkout"
 alias gm="git merge"
 alias gp="git pull"
+alias gmm="git commit -m "
 
 # start ssh daemon
 pcscd
