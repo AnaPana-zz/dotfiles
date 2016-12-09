@@ -68,3 +68,6 @@ sudo apt-get install sbt
 
 # install Krusader file manager
 
+# firefox addons
+# gtranslate
+# http://lemon-juice.github.io/mouse-gestures-suite/
