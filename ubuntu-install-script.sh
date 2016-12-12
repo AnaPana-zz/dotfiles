@@ -71,3 +71,9 @@ sudo apt-get install sbt
 # firefox addons
 # gtranslate
 # http://lemon-juice.github.io/mouse-gestures-suite/
+
+
+## BITBUCKET
+
+# Add bitbucket to /etc/hosts
+# Add private key from NCBI server to my local computer
