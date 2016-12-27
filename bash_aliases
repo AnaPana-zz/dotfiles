@@ -46,8 +46,19 @@ alias sshncbi="ssh -C -Y -I /usr/lib/x86_6shfs log-linux-gnu/opensc-pkcs11.so ${
 alias sshfsmnt="sudo sshfs -o allow_other -p ${SSHFS_PORT} ${USERNAME}@localhost:/home/${USERNAME}/ ${MOUNT_FOLDER}"
 alias usshfsmnt="sudo umount ${MOUNT_FOLDER}"
 
+# http://stackoverflow.com/questions/3510673/find-and-kill-a-process-in-one-line-using-bash-and-regex
 
+# create ssh tunnel in the background
 alias sshb="ssh -nfNT ${SSH_CONN_NAME}"
+
+# kill ssh process
+alias sshkill="pkill -f 'ssh -nfNT ${SSH_CONN_NAME}'"
+
+# restart ssh process
+alias sshr="sshkill && sshb"
 
 alias rd_user="rdesktop -u ${USERNAME} -d ${DOMAIN} -g 1680x1050 localhost:${SSH_CONN_PORT}"
 alias rd="rdesktop -r scard:\"${SCARD_ID}\" -g 1680x1050 localhost:${SSH_CONN_PORT}"
+
+# ssh keys
+alias sshkey="ssh-keygen -t rsa -b 4096"
