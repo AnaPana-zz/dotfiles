@@ -1,6 +1,9 @@
 #! /bin/bash
 
 source ${HOME}/.env.sh
+source /home/anastasia/.local/bin/virtualenvwrapper.sh
+
+export WORKON_HOME=~/venvs
 
 # Will load the following variables
 # USERNAME: current username
