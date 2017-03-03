@@ -27,6 +27,12 @@ if [ -f ~/.git-completion.bash ]; then
   __git_complete gp _git_pull
 fi
 
+if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
+    . /usr/share/git-core/contrib/completion/git-prompt.sh
+    GIT_PS1_SHOWDIRTYSTATE=true
+    PS1='\[\033[01;32m\][\!] \u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[0;33m\] \[\033[0;33m\]$(__git_ps1 "(%s)") \[\033[00m\]\$ '
+fi
+
 # Make sure you actually have those aliases defined, of course.
 alias g="git"
 alias gc="git checkout"
